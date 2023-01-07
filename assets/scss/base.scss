@@ -1,0 +1,21 @@
+body {
+	width: 100%;
+	overflow: hidden;
+	overflow-y: scroll;
+	color: var(--color-deep-blue);
+	background: var(--color-white);
+	// font-family: var(--font-f-essential-sans);
+}
+
+section {
+	position: relative;
+	margin: vw(375, 80) 0;
+
+	@include minTablet {
+		margin: vw(1440, 210) 0;
+	}
+}
+
+main {
+	overflow: hidden;
+}

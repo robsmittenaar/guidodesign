@@ -1,0 +1,22 @@
+:root {
+  // colors
+  --color-white: #ffffff;
+
+  // fonts
+  // --font-f-editors-note: "Editor's Note";
+  // --font-f-essential-sans: "Essential Sans";
+
+  // type
+  --font-s-h0: #{vw(375, 118)};
+  --font-lh-h0: #{vw(375, 118)};
+  --font-ls-h0: #{vw(375, 0)};
+}
+
+@include minTablet {
+  :root {
+    // type
+    --font-s-h0: #{vw(1440, 118)};
+    --font-lh-h0: #{vw(1440, 118)};
+    --font-ls-h0: #{vw(1440, 0)};
+  }
+}

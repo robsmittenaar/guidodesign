@@ -1,0 +1,69 @@
+// responsive
+@mixin maxMobile {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin minTablet {
+  @media (min-width: 601px) {
+    @content;
+  }
+}
+
+@mixin maxTablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin minDesktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+// interactions
+@mixin hover {
+  @media (hover: hover) {
+    @content;
+  }
+}
+
+// layouts
+@mixin container {
+  margin: 0 vw(375, 20);
+
+  @include minTablet {
+    margin: 0 vw(1440, 120);
+  }
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin grid {
+  display: grid;
+  grid-column-gap: vw(375, 20);
+  grid-template-columns: repeat(6, 1fr);
+
+  @include minTablet {
+    grid-column-gap: vw(1440, 32);
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+@mixin cover {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
