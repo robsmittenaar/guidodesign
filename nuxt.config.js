@@ -50,18 +50,12 @@ export default {
 	buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxtjs/style-resources'],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
-	modules: ['@nuxtjs/svg', '@nuxtjs/device', '@nuxtjs/sitemap'],
+	modules: ['@nuxtjs/svg', '@nuxtjs/device'],
 
 	// Nuxt Router: custom classes
 	router: {
 		linkActiveClass: 'is-active',
 		linkExactActiveClass: 'is-current',
-	},
-
-	// Nuxt Sitemap: https://sitemap.nuxtjs.org/usage/sitemap
-	sitemap: {
-		hostname: 'https://guidodesign.nl',
-		gzip: true,
 	},
 
 	// Server Configuration: https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-server
