@@ -1,8 +1,8 @@
-import Banner from '~/components/banner/Banner';
+import HeroVideo from '~/components/heroVideo/HeroVideo';
 
 export default {
   components: {
-    Banner,
+    HeroVideo,
   },
 
   computed: {

@@ -1,4 +1,4 @@
-const WP_BASE_URL = 'https://guidodesign.exoape.com.com/wp-json';
+const WP_BASE_URL = 'https://guidodesign.exoape.com/wp-json';
 
 export const getPageBySlug = async (slug) => {
   const data = await fetch(`${WP_BASE_URL}/wp/v2/pages?slug=${slug}`)

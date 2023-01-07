@@ -7,11 +7,11 @@ export default {
     css: false,
 
     enter() {
-      this.$nuxt.$emit('loader:leave');
+      // this.$nuxt.$emit('loader:leave');
     },
 
     leave(el, done) {
-      this.$nuxt.$emit('loader:enter');
+      // this.$nuxt.$emit('loader:enter');
 
       setTimeout(() => {
         gsap.set(el, { autoAlpha: 0 });

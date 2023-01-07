@@ -1,6 +1,6 @@
 <template>
 	<main class="page">
-		<component :is="component.acf_fc_layout" v-for="component in components" :key="component.acf_fc_layout" v-bind="component" />
+		<pre>{{ page }}</pre>
 	</main>
 </template>
 
@@ -12,12 +12,12 @@ import seo from '~/mixins/seo';
 import { getPageBySlug } from '~/utils/functions/wp';
 
 export default {
-	name: 'HomePage',
+	name: 'DefaultPage',
 
 	mixins: [components, transition, seo],
 
-	async asyncData() {
-		const page = await getPageBySlug('home');
+	async asyncData({ params }) {
+		const page = await getPageBySlug(params.slug);
 
 		return { page };
 	},
