@@ -1,5 +1,9 @@
 <template>
-  <section class="hero-video" />
+  <section class="hero-video">
+    <video autoplay muted playsinline loop>
+      <source :src="video.url" type="video/mp4">
+    </video>
+  </section>
 </template>
 
 <script>
@@ -8,7 +12,7 @@ export default {
 
   props: {
     video: {
-      type: String,
+      type: Object,
       required: true,
     },
   },

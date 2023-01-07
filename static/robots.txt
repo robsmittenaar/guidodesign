@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://guidodesign.com/sitemap.xml
+Sitemap: https://guidodesign.nl/sitemap.xml

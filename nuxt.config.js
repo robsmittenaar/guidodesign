@@ -11,8 +11,8 @@ export default {
 
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
-		title: 'Guidodesign',
-		titleTemplate: '%s — Guidodesign',
+		title: 'guidodesign.nl',
+		titleTemplate: '%s',
 		htmlAttrs: {
 			lang: 'en',
 		},
@@ -23,10 +23,10 @@ export default {
 			{ name: 'robots', content: 'index, follow' },
 			{ property: 'og:site_name', content: 'Guidodesign' },
 			{ property: 'og:type', content: 'website' },
-			{ property: 'og:image', hid: 'og_image', content: 'https://www.guidodesign.com/img/og.png' },
+			{ property: 'og:image', hid: 'og_image', content: 'https://www.guidodesign.nl/img/og.png' },
 			{ name: 'twitter:card', content: 'summary_large_image' },
 			{ name: 'twitter:creator', content: '@guidodesign' },
-			{ name: 'twitter:image:src', hid: 'twitter_image', content: 'https://www.guidodesign.com/img/og.png' },
+			{ name: 'twitter:image:src', hid: 'twitter_image', content: 'https://www.guidodesign.nl/img/og.png' },
 			{ name: 'msapplication-TileColor', content: '#0c5582' },
 			{ name: 'theme-color', content: '#ffffff' },
 		],
@@ -60,7 +60,7 @@ export default {
 
 	// Nuxt Sitemap: https://sitemap.nuxtjs.org/usage/sitemap
 	sitemap: {
-		hostname: 'https://guidodesign.com',
+		hostname: 'https://guidodesign.nl',
 		gzip: true,
 	},
 
