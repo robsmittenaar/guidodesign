@@ -1,6 +1,6 @@
 <template>
   <section class="hero-video">
-    <video autoplay muted playsinline loop>
+    <video autoplay muted playsinline loop class="video">
       <source :src="video.url" type="video/mp4">
     </video>
   </section>
