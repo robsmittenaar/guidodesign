@@ -47,7 +47,7 @@ export default {
 	},
 
 	// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-	buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxtjs/style-resources'],
+	buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxtjs/style-resources', '@nuxt/image'],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: ['@nuxtjs/svg', '@nuxtjs/device'],
@@ -62,4 +62,17 @@ export default {
 	server: {
 		host: '0.0.0.0',
 	},
+
+	image: {
+		domains: ['https://wp.guidodesign.nl'],
+		screens: {
+			xs: 320,
+			sm: 640,
+			md: 768,
+			lg: 1024,
+			xl: 1280,
+			xxl: 1536,
+			'2xl': 1536
+		},
+	}
 };
