@@ -47,10 +47,10 @@ export default {
 	},
 
 	// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-	buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxtjs/style-resources', '@nuxt/image'],
+	buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxtjs/style-resources'],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
-	modules: ['@nuxtjs/svg', '@nuxtjs/device'],
+	modules: ['@nuxtjs/svg', '@nuxtjs/device', '@nuxt/image'],
 
 	// Nuxt Router: custom classes
 	router: {
