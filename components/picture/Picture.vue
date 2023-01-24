@@ -1,7 +1,6 @@
 <template>
   <section class="picture">
-    <pre>{{ image.alt }}</pre>
-    <nuxt-picture :src="image.url" quality="80" :alt="image.alt" />
+    <nuxt-img :src="image.url" quality="1" :alt="image.alt" />
   </section>
 </template>
 
